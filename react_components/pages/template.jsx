@@ -28,6 +28,7 @@ var TemplatePage = React.createClass({
 				</head>
 				<body>
 					{page}
+					<script type="text/javascript" src="/renderer"></script>
 				</body>
 			</html>
 		);

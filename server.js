@@ -16,12 +16,21 @@ http.createServer(function (request, response) {
 					throw err;
 				}
 				response.writeHead(200, {'Content-Type': 'text/html'});
-				response.end(React.renderToStaticMarkup(
+				response.end(React.renderToString(
 					React.createElement(TemplatePage,
 					{
 						page: 'index'
 					})
 				));
+			});
+			break;
+		case '/renderer':
+			fs.readFile('./renderer.js', function readFile (err, script) {
+				if(err) {
+					throw err;
+				}
+				response.writeHead(200, {'Content-Type': 'text/javascript'});
+				response.end(script);
 			});
 			break;
 		default:
