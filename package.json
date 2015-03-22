@@ -24,5 +24,8 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/arkeidolon/arkeidolon/issues"
+  },
+  "dependencies": {
+    "react": "~0.13.1"
   }
 }
