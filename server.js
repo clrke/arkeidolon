@@ -16,7 +16,7 @@ http.createServer(function (request, response) {
 					throw err;
 				}
 				response.writeHead(200, {'Content-Type': 'text/html'});
-				response.end(React.renderToString(
+				response.end(React.renderToStaticMarkup(
 					React.createElement(TemplatePage,
 					{
 						page: 'index'

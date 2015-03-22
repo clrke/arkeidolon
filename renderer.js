@@ -21792,51 +21792,10 @@ module.exports = IndexPage;
 
 
 },{"react":173}],176:[function(require,module,exports){
-/** @jsx React.DOM */
-var React = require('react'),
-	IndexPage = require('./index');
-
-var TemplatePage = React.createClass({
-	displayName: 'TemplatePage',
-	propTypes: {
-		page: React.PropTypes.string.isRequired
-	},
-	getPage: function () {
-		switch(this.props.page) {
-			case 'index':
-				return (
-					React.createElement(IndexPage, null)
-				);
-			default:
-				return null;
-		}
-	},
-	render: function () {
-		var page = this.getPage();
-		return (
-			React.createElement("html", null, 
-				React.createElement("head", null, 
-					React.createElement("title", null, 
-						"Hello World!"
-					)
-				), 
-				React.createElement("body", null, 
-					page, 
-					React.createElement("script", {type: "text/javascript", src: "/renderer"})
-				)
-			)
-		);
-	}
-});
-
-module.exports = TemplatePage;
-
-
-},{"./index":175,"react":173}],177:[function(require,module,exports){
 var React = require('react/addons'),
-	Template = require('./pages/template');
+	IndexPage = require('./pages/index');
 
-React.render(React.createElement(Template, {page: "index"}), document);
+React.render(React.createElement(IndexPage, null), document.body);
 
 
-},{"./pages/template":176,"react/addons":1}]},{},[177]);
+},{"./pages/index":175,"react/addons":1}]},{},[176]);

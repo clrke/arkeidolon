@@ -1,4 +1,4 @@
 var React = require('react/addons'),
-	Template = require('./pages/template');
+	IndexPage = require('./pages/index');
 
-React.render(<Template page='index'/>, document);
+React.render(<IndexPage/>, document.body);
