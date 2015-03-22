@@ -1,0 +1,28 @@
+{
+  "name": "arkeidolon",
+  "version": "0.0.0",
+  "description": "Clarke Benedict Plumo's blog site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arkeidolon/arkeidolon.git"
+  },
+  "keywords": [
+    "clarke",
+    "benedict",
+    "tapay",
+    "plumo",
+    "arkeidolon",
+    "blog",
+    "site"
+  ],
+  "author": "Clarke Benedict Tapay Plumo <clarke.plumo@gmail.com> (http://githuv.com/arkeidolon)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/arkeidolon/arkeidolon/issues"
+  }
+}
