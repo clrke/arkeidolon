@@ -21779,10 +21779,15 @@ var IndexPage = React.createClass({
     displayName: 'IndexPage',
     render: function () {
         return (
-        	React.createElement("div", null, 
-				React.createElement("h1", null, " Hello! Welcome to my blog site! "), 
-				React.createElement("button", {onClick: this.handleClick}, " Click Me! "), 
-				this.state.i
+        	React.createElement("div", {className: "row"}, 
+        		React.createElement("div", {className: "panel"}, 
+					React.createElement("h1", null, " Hello! Welcome to my blog site! "), 
+					React.createElement("button", {onClick: this.handleClick, 
+						className: "button"}, 
+						"Click Me!"
+					), 
+					this.state.i
+				)
 			)
         );
     }

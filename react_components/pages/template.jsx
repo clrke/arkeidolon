@@ -25,6 +25,8 @@ var TemplatePage = React.createClass({
 					<title>
 						Hello World!
 					</title>
+					<link rel="stylesheet" type="text/css"
+						href="/foundation.css" />
 				</head>
 				<body>
 					{page}

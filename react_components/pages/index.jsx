@@ -13,10 +13,15 @@ var IndexPage = React.createClass({
     displayName: 'IndexPage',
     render: function () {
         return (
-        	<div>
-				<h1> Hello! Welcome to my blog site! </h1>
-				<button onClick={this.handleClick}> Click Me! </button>
-				{this.state.i}
+        	<div className="row">
+        		<div className="panel">
+					<h1> Hello! Welcome to my blog site! </h1>
+					<button onClick={this.handleClick}
+						className="button">
+						Click Me!
+					</button>
+					{this.state.i}
+				</div>
 			</div>
         );
     }

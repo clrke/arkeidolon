@@ -33,6 +33,16 @@ http.createServer(function (request, response) {
 				response.end(script);
 			});
 			break;
+		case '/foundation.css':
+			fs.readFile('./src/foundation/css/foundation.min.css',
+					function readFile (err, css) {
+				if(err) {
+					throw err;
+				}
+				response.writeHead(200, {'Content-Type': 'text/css'});
+				response.end(css);
+			});
+			break;
 		default:
 			response.writeHead(404, {'Content-Type': 'text/text'});
 			response.end('404 page not found');
