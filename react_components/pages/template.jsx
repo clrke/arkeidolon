@@ -27,6 +27,8 @@ var TemplatePage = React.createClass({
 					</title>
 					<link rel="stylesheet" type="text/css"
 						href="/foundation.css" />
+					<link rel="stylesheet" type="text/css"
+						href="/animate.css" />
 				</head>
 				<body>
 					{page}

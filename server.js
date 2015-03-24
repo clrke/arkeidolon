@@ -43,6 +43,16 @@ http.createServer(function (request, response) {
 				response.end(css);
 			});
 			break;
+		case '/animate.css':
+			fs.readFile('./src/animate.css',
+					function readFile (err, css) {
+				if(err) {
+					throw err;
+				}
+				response.writeHead(200, {'Content-Type': 'text/css'});
+				response.end(css);
+			});
+			break;
 		default:
 			response.writeHead(404, {'Content-Type': 'text/text'});
 			response.end('404 page not found');

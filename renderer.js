@@ -21780,13 +21780,15 @@ var IndexPage = React.createClass({
     render: function () {
         return (
         	React.createElement("div", {className: "row"}, 
-        		React.createElement("div", {className: "panel animated fadeInDown"}, 
+        		React.createElement("div", {className: "panel"}, 
 					React.createElement("h1", null, " Hello! Welcome to my blog site! "), 
 					React.createElement("button", {onClick: this.handleClick, 
 						className: "button"}, 
-						"Click Me!"
+						"Click Me Not!"
 					), 
-					this.state.i
+					React.createElement("div", {className: "animated fadeInDown"}, 
+						this.state.i
+					)
 				)
 			)
         );

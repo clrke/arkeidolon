@@ -14,7 +14,7 @@ var IndexPage = React.createClass({
     render: function () {
         return (
         	<div className="row">
-        		<div className="panel">
+        		<div className="panel animated fadeInDown">
 					<h1> Hello! Welcome to my blog site! </h1>
 					<button onClick={this.handleClick}
 						className="button">
