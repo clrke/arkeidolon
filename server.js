@@ -25,7 +25,7 @@ http.createServer(function (request, response) {
 			});
 			break;
 		case '/renderer':
-			fs.readFile('./renderer.js', function readFile (err, script) {
+			fs.readFile('./src/renderer.js', function readFile (err, script) {
 				if(err) {
 					throw err;
 				}
