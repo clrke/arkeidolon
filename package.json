@@ -4,7 +4,7 @@
   "description": "Clarke Benedict Plumo's blog site",
   "main": "server.js",
   "scripts": {
-    "build": "watchify -t reactify --extension=.jsx -o renderer.js react_components/renderer.jsx -v",
+    "build": "watchify -t reactify --extension=.jsx -o src/renderer.js react_components/renderer.jsx -v",
     "start": "node server.js"
   },
   "repository": {
